@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yieee chat mo na ako<3</title>
+    <link rel="stylesheet" href="yes.css">
+    <style>
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="kilig">
+        <img src="https://c.tenor.com/zqm6WMNOXm0AAAAC/peachcute-peachhappy.gif" alt="Peach Happy GIF">
+        <img src="https://c.tenor.com/s--312__jnoAAAAC/kermit-kermit-love.gif" alt="Kermit Love GIF">
+        <p class="ay">yieee, chat mo na ako usap na us</p>
+        <audio id="kilig-sound" src="music/1.mp3" autoplay loop></audio>
+        <p class="ay">i love you my honeybunch sugar pumpy-umpy-umpkin mwamwa</p>
+        <img src="picture/1.jpg" alt="Kilig Image">
+    </div>
+    <div class="fff">
+        <p>Created by: Earl Denver</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const kiligSound = document.getElementById('kilig-sound');
+            kiligSound.volume = 1.0; // Ensure volume is full
+            kiligSound.play().catch((error) => {
+                console.log("Autoplay blocked by browser:", error);
+                // Fallback: Play on first click if blocked
+                document.body.addEventListener('click', () => {
+                    kiligSound.play().catch((err) => console.log("Fallback play failed:", err));
+                }, { once: true });
+            });
+        });
+    </script>
+</body>
+</html>

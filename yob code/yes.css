@@ -1,0 +1,23 @@
+.kilig img {
+    width: 200px;
+}
+
+.kilig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.ay {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.fff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em; /* Adds space above "Created by" */
+}
